@@ -23,6 +23,7 @@ We will assume the following:
 (a person having a low standard deviation between its scoring and the computed score is fair; a high one is unfair).
 
 Each person score is then weighted by:
+
 1. its own score,
 2. its fairness factor.
 
@@ -32,6 +33,8 @@ The given set of equation is rather complex to solve analytically given it's nat
 but we use the fact that the system is bound to be stable so an iterative solution will
 quickly converge to the optimal solution.
 
-The code itself is rather straighforward. The number of iterations is fixed; but we could instead use a condition on real convergence (computing the relative delta between each iteration).
+The code itself is rather straightforward. The number of iterations is fixed;
+but we could instead use a condition on real convergence (computing the relative delta between each iteration).
+Given the quick computation and convergence it's probably not worth it.
 
 This code and algorithm are published in the public-domain.
