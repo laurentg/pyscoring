@@ -27,8 +27,11 @@ Each person score is then weighted by:
 2. its fairness factor.
 
 The weight is the product of the two normalized values.
-The final score is then multiplied by the final fairness factor (we call it the `punished score`)
+The final score is then multiplied by the final fairness factor (we call it the *punished score*)
 and normalized again to have an average of 100 (this step is optional, but handy).
+
+Obviously one is free to choose any weight for the *punishment step*,
+to weight differently the fairness vs the raw score.
 
 In order to have a good score, each person thus should:
 
@@ -94,5 +97,3 @@ Here we see that the fairness factor for H is very low (23). It's final score (3
 
 On the other hand, the fairness factor for A and B are very high (124 and 127).
 Their final scores (89 and 101) are higher than the raw scores (60 and 65).
-
-
